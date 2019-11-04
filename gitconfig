@@ -11,9 +11,8 @@
  a = add
  ap = add -p
  aa = add .
- ac = !git add -A && git commit -m
  c = commit --verbose
- ca = commit -a --verbose
+ ca = !git add -A && git commit -m
  cm = commit -m
  cam = commit -a -m
  m = commit --amend --verbose
@@ -25,7 +24,6 @@
  ap = add -p
  aa = add .
  c = commit --verbose
- ca = commit -a --verbose
  cm = commit -m
  cam = commit -a -m
  m = commit --amend --verbose
@@ -37,6 +35,9 @@
  s = status -s
  co = checkout
  cob = checkout -b
+
+ gp = git push
+
  # list branches sorted by last modified
  b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
 
